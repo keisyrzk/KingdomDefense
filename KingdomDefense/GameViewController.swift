@@ -17,7 +17,7 @@ class GameViewController: UIViewController, GameSceneDelegate {
     
     var scene: GameScene!
     
-    var currentLevel = 2
+    var currentLevel = 0
     
     var units: [Unit] = []
     var waveCounter = 0
