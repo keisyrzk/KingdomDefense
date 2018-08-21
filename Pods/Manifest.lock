@@ -1,0 +1,18 @@
+PODS:
+  - EVReflection (5.6.2):
+    - EVReflection/Core (= 5.6.2)
+  - EVReflection/Core (5.6.2)
+
+DEPENDENCIES:
+  - EVReflection
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EVReflection
+
+SPEC CHECKSUMS:
+  EVReflection: 640322f8a3aaf78cbc3c23892476b6adb636ebf0
+
+PODFILE CHECKSUM: c8e2f6f6be302b646e1074b08d8a0dbeaae012cc
+
+COCOAPODS: 1.5.3
