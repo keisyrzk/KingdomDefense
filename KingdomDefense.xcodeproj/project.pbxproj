@@ -7,27 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BF2A61E212C19270065EC56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A61D212C19270065EC56 /* AppDelegate.swift */; };
-		5BF2A620212C19270065EC56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A61F212C19270065EC56 /* GameScene.sks */; };
-		5BF2A622212C19270065EC56 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A621212C19270065EC56 /* Actions.sks */; };
-		5BF2A624212C19270065EC56 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A623212C19270065EC56 /* GameScene.swift */; };
-		5BF2A626212C19270065EC56 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A625212C19270065EC56 /* GameViewController.swift */; };
-		5BF2A629212C19270065EC56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A627212C19270065EC56 /* Main.storyboard */; };
-		5BF2A62B212C19280065EC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A62A212C19280065EC56 /* Assets.xcassets */; };
-		5BF2A62E212C19280065EC56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A62C212C19280065EC56 /* LaunchScreen.storyboard */; };
+		5BF2A66C212C19620065EC56 /* MoveBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A636212C19600065EC56 /* MoveBehavior.swift */; };
+		5BF2A66D212C19620065EC56 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A637212C19600065EC56 /* GameScene.swift */; };
+		5BF2A66E212C19620065EC56 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A638212C19600065EC56 /* GameViewController.swift */; };
+		5BF2A66F212C19620065EC56 /* TowerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A63A212C19600065EC56 /* TowerPicker.swift */; };
+		5BF2A670212C19620065EC56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A63B212C19600065EC56 /* AppDelegate.swift */; };
+		5BF2A671212C19620065EC56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A63C212C19600065EC56 /* LaunchScreen.storyboard */; };
+		5BF2A672212C19620065EC56 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A63E212C19600065EC56 /* Helpers.swift */; };
+		5BF2A673212C19620065EC56 /* Array+shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A640212C19600065EC56 /* Array+shuffle.swift */; };
+		5BF2A674212C19620065EC56 /* CGPoint+distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A641212C19600065EC56 /* CGPoint+distance.swift */; };
+		5BF2A675212C19620065EC56 /* CGPoint+calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A642212C19600065EC56 /* CGPoint+calculations.swift */; };
+		5BF2A676212C19620065EC56 /* TowerType+getCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A643212C19600065EC56 /* TowerType+getCost.swift */; };
+		5BF2A677212C19620065EC56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A644212C19610065EC56 /* Main.storyboard */; };
+		5BF2A678212C19620065EC56 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A645212C19610065EC56 /* Actions.sks */; };
+		5BF2A679212C19620065EC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A646212C19610065EC56 /* Assets.xcassets */; };
+		5BF2A67A212C19620065EC56 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A648212C19610065EC56 /* Level_2.json */; };
+		5BF2A67B212C19620065EC56 /* TileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A649212C19610065EC56 /* TileModel.swift */; };
+		5BF2A67C212C19620065EC56 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A64A212C19610065EC56 /* Array2D.swift */; };
+		5BF2A67D212C19620065EC56 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A64B212C19610065EC56 /* Level_0.json */; };
+		5BF2A67E212C19620065EC56 /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A64C212C19610065EC56 /* LevelData.swift */; };
+		5BF2A67F212C19620065EC56 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A64D212C19610065EC56 /* Level.swift */; };
+		5BF2A680212C19620065EC56 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2A64E212C19610065EC56 /* Level_1.json */; };
+		5BF2A681212C19620065EC56 /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A650212C19610065EC56 /* Knight.swift */; };
+		5BF2A682212C19620065EC56 /* Castle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A651212C19610065EC56 /* Castle.swift */; };
+		5BF2A683212C19620065EC56 /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A652212C19610065EC56 /* Dwarf.swift */; };
+		5BF2A684212C19620065EC56 /* Undead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A653212C19610065EC56 /* Undead.swift */; };
+		5BF2A685212C19620065EC56 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A654212C19610065EC56 /* CustomShape.swift */; };
+		5BF2A686212C19620065EC56 /* MagmaCannonFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A656212C19610065EC56 /* MagmaCannonFire.swift */; };
+		5BF2A687212C19620065EC56 /* PlasmaFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A657212C19610065EC56 /* PlasmaFire.swift */; };
+		5BF2A688212C19620065EC56 /* CannonFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A658212C19610065EC56 /* CannonFire.swift */; };
+		5BF2A689212C19620065EC56 /* MeleeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A659212C19610065EC56 /* MeleeComponent.swift */; };
+		5BF2A68A212C19620065EC56 /* BallisticFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A65A212C19610065EC56 /* BallisticFire.swift */; };
+		5BF2A68B212C19620065EC56 /* ToxicFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A65B212C19610065EC56 /* ToxicFire.swift */; };
+		5BF2A68C212C19620065EC56 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A65C212C19610065EC56 /* Arrow.swift */; };
+		5BF2A68D212C19620065EC56 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A65E212C19610065EC56 /* Tower.swift */; };
+		5BF2A68E212C19620065EC56 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A65F212C19610065EC56 /* EntityManager.swift */; };
+		5BF2A68F212C19620065EC56 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A660212C19610065EC56 /* Tile.swift */; };
+		5BF2A690212C19620065EC56 /* FireComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A662212C19620065EC56 /* FireComponent.swift */; };
+		5BF2A691212C19620065EC56 /* CastleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A663212C19620065EC56 /* CastleComponent.swift */; };
+		5BF2A692212C19620065EC56 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A664212C19620065EC56 /* SpriteComponent.swift */; };
+		5BF2A693212C19620065EC56 /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A665212C19620065EC56 /* TeamComponent.swift */; };
+		5BF2A694212C19620065EC56 /* HealthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A666212C19620065EC56 /* HealthComponent.swift */; };
+		5BF2A695212C19620065EC56 /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A667212C19620065EC56 /* MoveComponent.swift */; };
+		5BF2A696212C19620065EC56 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A669212C19620065EC56 /* Units.swift */; };
+		5BF2A697212C19620065EC56 /* LevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A66A212C19620065EC56 /* LevelModel.swift */; };
+		5BF2A698212C19620065EC56 /* WaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2A66B212C19620065EC56 /* WaveModel.swift */; };
+		989376B580C2868908B2ED1E /* Pods_KingdomDefense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15444D446A2E0EB2CDD575E /* Pods_KingdomDefense.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BF2A61A212C19270065EC56 /* KingdomDefense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingdomDefense.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF2A61D212C19270065EC56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BF2A61F212C19270065EC56 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5BF2A621212C19270065EC56 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		5BF2A623212C19270065EC56 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		5BF2A625212C19270065EC56 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		5BF2A628212C19270065EC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5BF2A62A212C19280065EC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5BF2A62D212C19280065EC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BF2A62F212C19280065EC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF2A636212C19600065EC56 /* MoveBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveBehavior.swift; sourceTree = "<group>"; };
+		5BF2A637212C19600065EC56 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5BF2A638212C19600065EC56 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5BF2A63A212C19600065EC56 /* TowerPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerPicker.swift; sourceTree = "<group>"; };
+		5BF2A63B212C19600065EC56 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BF2A63C212C19600065EC56 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BF2A63E212C19600065EC56 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		5BF2A640212C19600065EC56 /* Array+shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+shuffle.swift"; sourceTree = "<group>"; };
+		5BF2A641212C19600065EC56 /* CGPoint+distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+distance.swift"; sourceTree = "<group>"; };
+		5BF2A642212C19600065EC56 /* CGPoint+calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+calculations.swift"; sourceTree = "<group>"; };
+		5BF2A643212C19600065EC56 /* TowerType+getCost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TowerType+getCost.swift"; sourceTree = "<group>"; };
+		5BF2A644212C19610065EC56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5BF2A645212C19610065EC56 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		5BF2A646212C19610065EC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BF2A648212C19610065EC56 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		5BF2A649212C19610065EC56 /* TileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileModel.swift; sourceTree = "<group>"; };
+		5BF2A64A212C19610065EC56 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		5BF2A64B212C19610065EC56 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		5BF2A64C212C19610065EC56 /* LevelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
+		5BF2A64D212C19610065EC56 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		5BF2A64E212C19610065EC56 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		5BF2A650212C19610065EC56 /* Knight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		5BF2A651212C19610065EC56 /* Castle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Castle.swift; sourceTree = "<group>"; };
+		5BF2A652212C19610065EC56 /* Dwarf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
+		5BF2A653212C19610065EC56 /* Undead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Undead.swift; sourceTree = "<group>"; };
+		5BF2A654212C19610065EC56 /* CustomShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		5BF2A656212C19610065EC56 /* MagmaCannonFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagmaCannonFire.swift; sourceTree = "<group>"; };
+		5BF2A657212C19610065EC56 /* PlasmaFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlasmaFire.swift; sourceTree = "<group>"; };
+		5BF2A658212C19610065EC56 /* CannonFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CannonFire.swift; sourceTree = "<group>"; };
+		5BF2A659212C19610065EC56 /* MeleeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeleeComponent.swift; sourceTree = "<group>"; };
+		5BF2A65A212C19610065EC56 /* BallisticFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallisticFire.swift; sourceTree = "<group>"; };
+		5BF2A65B212C19610065EC56 /* ToxicFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToxicFire.swift; sourceTree = "<group>"; };
+		5BF2A65C212C19610065EC56 /* Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		5BF2A65E212C19610065EC56 /* Tower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+		5BF2A65F212C19610065EC56 /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		5BF2A660212C19610065EC56 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		5BF2A662212C19620065EC56 /* FireComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireComponent.swift; sourceTree = "<group>"; };
+		5BF2A663212C19620065EC56 /* CastleComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastleComponent.swift; sourceTree = "<group>"; };
+		5BF2A664212C19620065EC56 /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		5BF2A665212C19620065EC56 /* TeamComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
+		5BF2A666212C19620065EC56 /* HealthComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthComponent.swift; sourceTree = "<group>"; };
+		5BF2A667212C19620065EC56 /* MoveComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
+		5BF2A669212C19620065EC56 /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		5BF2A66A212C19620065EC56 /* LevelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelModel.swift; sourceTree = "<group>"; };
+		5BF2A66B212C19620065EC56 /* WaveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveModel.swift; sourceTree = "<group>"; };
+		7CA7260693348642CE5085DE /* Pods-KingdomDefense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomDefense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KingdomDefense/Pods-KingdomDefense.debug.xcconfig"; sourceTree = "<group>"; };
+		92D024F9A34BD8DFE0888100 /* Pods-KingdomDefense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingdomDefense.release.xcconfig"; path = "Pods/Target Support Files/Pods-KingdomDefense/Pods-KingdomDefense.release.xcconfig"; sourceTree = "<group>"; };
+		C15444D446A2E0EB2CDD575E /* Pods_KingdomDefense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingdomDefense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +113,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989376B580C2868908B2ED1E /* Pods_KingdomDefense.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13BDCE79CEE7851A4E270F9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CA7260693348642CE5085DE /* Pods-KingdomDefense.debug.xcconfig */,
+				92D024F9A34BD8DFE0888100 /* Pods-KingdomDefense.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1AF724825AFF0C057A465879 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C15444D446A2E0EB2CDD575E /* Pods_KingdomDefense.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BF2A611212C19270065EC56 = {
 			isa = PBXGroup;
 			children = (
 				5BF2A61C212C19270065EC56 /* KingdomDefense */,
 				5BF2A61B212C19270065EC56 /* Products */,
+				13BDCE79CEE7851A4E270F9C /* Pods */,
+				1AF724825AFF0C057A465879 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +158,134 @@
 		5BF2A61C212C19270065EC56 /* KingdomDefense */ = {
 			isa = PBXGroup;
 			children = (
-				5BF2A61D212C19270065EC56 /* AppDelegate.swift */,
-				5BF2A61F212C19270065EC56 /* GameScene.sks */,
-				5BF2A621212C19270065EC56 /* Actions.sks */,
-				5BF2A623212C19270065EC56 /* GameScene.swift */,
-				5BF2A625212C19270065EC56 /* GameViewController.swift */,
-				5BF2A627212C19270065EC56 /* Main.storyboard */,
-				5BF2A62A212C19280065EC56 /* Assets.xcassets */,
-				5BF2A62C212C19280065EC56 /* LaunchScreen.storyboard */,
+				5BF2A645212C19610065EC56 /* Actions.sks */,
+				5BF2A63B212C19600065EC56 /* AppDelegate.swift */,
+				5BF2A646212C19610065EC56 /* Assets.xcassets */,
+				5BF2A661212C19620065EC56 /* Components */,
+				5BF2A64F212C19610065EC56 /* Entities */,
+				5BF2A637212C19600065EC56 /* GameScene.swift */,
+				5BF2A638212C19600065EC56 /* GameViewController.swift */,
+				5BF2A63D212C19600065EC56 /* Helpers */,
+				5BF2A63C212C19600065EC56 /* LaunchScreen.storyboard */,
+				5BF2A647212C19610065EC56 /* Levels */,
+				5BF2A644212C19610065EC56 /* Main.storyboard */,
+				5BF2A668212C19620065EC56 /* Models */,
+				5BF2A635212C19600065EC56 /* Movement */,
+				5BF2A639212C19600065EC56 /* Views */,
 				5BF2A62F212C19280065EC56 /* Info.plist */,
 			);
 			path = KingdomDefense;
+			sourceTree = "<group>";
+		};
+		5BF2A635212C19600065EC56 /* Movement */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A636212C19600065EC56 /* MoveBehavior.swift */,
+			);
+			path = Movement;
+			sourceTree = "<group>";
+		};
+		5BF2A639212C19600065EC56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A63A212C19600065EC56 /* TowerPicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BF2A63D212C19600065EC56 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A63E212C19600065EC56 /* Helpers.swift */,
+				5BF2A63F212C19600065EC56 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5BF2A63F212C19600065EC56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A640212C19600065EC56 /* Array+shuffle.swift */,
+				5BF2A641212C19600065EC56 /* CGPoint+distance.swift */,
+				5BF2A642212C19600065EC56 /* CGPoint+calculations.swift */,
+				5BF2A643212C19600065EC56 /* TowerType+getCost.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BF2A647212C19610065EC56 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A648212C19610065EC56 /* Level_2.json */,
+				5BF2A649212C19610065EC56 /* TileModel.swift */,
+				5BF2A64A212C19610065EC56 /* Array2D.swift */,
+				5BF2A64B212C19610065EC56 /* Level_0.json */,
+				5BF2A64C212C19610065EC56 /* LevelData.swift */,
+				5BF2A64D212C19610065EC56 /* Level.swift */,
+				5BF2A64E212C19610065EC56 /* Level_1.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		5BF2A64F212C19610065EC56 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A650212C19610065EC56 /* Knight.swift */,
+				5BF2A651212C19610065EC56 /* Castle.swift */,
+				5BF2A652212C19610065EC56 /* Dwarf.swift */,
+				5BF2A653212C19610065EC56 /* Undead.swift */,
+				5BF2A654212C19610065EC56 /* CustomShape.swift */,
+				5BF2A655212C19610065EC56 /* Fire */,
+				5BF2A65D212C19610065EC56 /* Towers */,
+				5BF2A65F212C19610065EC56 /* EntityManager.swift */,
+				5BF2A660212C19610065EC56 /* Tile.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5BF2A655212C19610065EC56 /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A656212C19610065EC56 /* MagmaCannonFire.swift */,
+				5BF2A657212C19610065EC56 /* PlasmaFire.swift */,
+				5BF2A658212C19610065EC56 /* CannonFire.swift */,
+				5BF2A659212C19610065EC56 /* MeleeComponent.swift */,
+				5BF2A65A212C19610065EC56 /* BallisticFire.swift */,
+				5BF2A65B212C19610065EC56 /* ToxicFire.swift */,
+				5BF2A65C212C19610065EC56 /* Arrow.swift */,
+			);
+			path = Fire;
+			sourceTree = "<group>";
+		};
+		5BF2A65D212C19610065EC56 /* Towers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A65E212C19610065EC56 /* Tower.swift */,
+			);
+			path = Towers;
+			sourceTree = "<group>";
+		};
+		5BF2A661212C19620065EC56 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A662212C19620065EC56 /* FireComponent.swift */,
+				5BF2A663212C19620065EC56 /* CastleComponent.swift */,
+				5BF2A664212C19620065EC56 /* SpriteComponent.swift */,
+				5BF2A665212C19620065EC56 /* TeamComponent.swift */,
+				5BF2A666212C19620065EC56 /* HealthComponent.swift */,
+				5BF2A667212C19620065EC56 /* MoveComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5BF2A668212C19620065EC56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2A669212C19620065EC56 /* Units.swift */,
+				5BF2A66A212C19620065EC56 /* LevelModel.swift */,
+				5BF2A66B212C19620065EC56 /* WaveModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF2A632212C19280065EC56 /* Build configuration list for PBXNativeTarget "KingdomDefense" */;
 			buildPhases = (
+				2EA275C3D16A3F07A2290D44 /* [CP] Check Pods Manifest.lock */,
 				5BF2A616212C19270065EC56 /* Sources */,
 				5BF2A617212C19270065EC56 /* Frameworks */,
 				5BF2A618212C19270065EC56 /* Resources */,
+				FA55D3CD8773698607FC45E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,6 +322,7 @@
 				TargetAttributes = {
 					5BF2A619212C19270065EC56 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -131,47 +349,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF2A629212C19270065EC56 /* Main.storyboard in Resources */,
-				5BF2A620212C19270065EC56 /* GameScene.sks in Resources */,
-				5BF2A62B212C19280065EC56 /* Assets.xcassets in Resources */,
-				5BF2A62E212C19280065EC56 /* LaunchScreen.storyboard in Resources */,
-				5BF2A622212C19270065EC56 /* Actions.sks in Resources */,
+				5BF2A680212C19620065EC56 /* Level_1.json in Resources */,
+				5BF2A671212C19620065EC56 /* LaunchScreen.storyboard in Resources */,
+				5BF2A67D212C19620065EC56 /* Level_0.json in Resources */,
+				5BF2A67A212C19620065EC56 /* Level_2.json in Resources */,
+				5BF2A678212C19620065EC56 /* Actions.sks in Resources */,
+				5BF2A679212C19620065EC56 /* Assets.xcassets in Resources */,
+				5BF2A677212C19620065EC56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EA275C3D16A3F07A2290D44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingdomDefense-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA55D3CD8773698607FC45E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KingdomDefense/Pods-KingdomDefense-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KingdomDefense/Pods-KingdomDefense-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BF2A616212C19270065EC56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF2A624212C19270065EC56 /* GameScene.swift in Sources */,
-				5BF2A626212C19270065EC56 /* GameViewController.swift in Sources */,
-				5BF2A61E212C19270065EC56 /* AppDelegate.swift in Sources */,
+				5BF2A68D212C19620065EC56 /* Tower.swift in Sources */,
+				5BF2A66D212C19620065EC56 /* GameScene.swift in Sources */,
+				5BF2A67C212C19620065EC56 /* Array2D.swift in Sources */,
+				5BF2A68F212C19620065EC56 /* Tile.swift in Sources */,
+				5BF2A688212C19620065EC56 /* CannonFire.swift in Sources */,
+				5BF2A68A212C19620065EC56 /* BallisticFire.swift in Sources */,
+				5BF2A686212C19620065EC56 /* MagmaCannonFire.swift in Sources */,
+				5BF2A672212C19620065EC56 /* Helpers.swift in Sources */,
+				5BF2A682212C19620065EC56 /* Castle.swift in Sources */,
+				5BF2A685212C19620065EC56 /* CustomShape.swift in Sources */,
+				5BF2A698212C19620065EC56 /* WaveModel.swift in Sources */,
+				5BF2A689212C19620065EC56 /* MeleeComponent.swift in Sources */,
+				5BF2A694212C19620065EC56 /* HealthComponent.swift in Sources */,
+				5BF2A67E212C19620065EC56 /* LevelData.swift in Sources */,
+				5BF2A693212C19620065EC56 /* TeamComponent.swift in Sources */,
+				5BF2A681212C19620065EC56 /* Knight.swift in Sources */,
+				5BF2A66E212C19620065EC56 /* GameViewController.swift in Sources */,
+				5BF2A68B212C19620065EC56 /* ToxicFire.swift in Sources */,
+				5BF2A675212C19620065EC56 /* CGPoint+calculations.swift in Sources */,
+				5BF2A684212C19620065EC56 /* Undead.swift in Sources */,
+				5BF2A674212C19620065EC56 /* CGPoint+distance.swift in Sources */,
+				5BF2A683212C19620065EC56 /* Dwarf.swift in Sources */,
+				5BF2A697212C19620065EC56 /* LevelModel.swift in Sources */,
+				5BF2A695212C19620065EC56 /* MoveComponent.swift in Sources */,
+				5BF2A673212C19620065EC56 /* Array+shuffle.swift in Sources */,
+				5BF2A67F212C19620065EC56 /* Level.swift in Sources */,
+				5BF2A66C212C19620065EC56 /* MoveBehavior.swift in Sources */,
+				5BF2A696212C19620065EC56 /* Units.swift in Sources */,
+				5BF2A691212C19620065EC56 /* CastleComponent.swift in Sources */,
+				5BF2A67B212C19620065EC56 /* TileModel.swift in Sources */,
+				5BF2A68E212C19620065EC56 /* EntityManager.swift in Sources */,
+				5BF2A676212C19620065EC56 /* TowerType+getCost.swift in Sources */,
+				5BF2A692212C19620065EC56 /* SpriteComponent.swift in Sources */,
+				5BF2A670212C19620065EC56 /* AppDelegate.swift in Sources */,
+				5BF2A687212C19620065EC56 /* PlasmaFire.swift in Sources */,
+				5BF2A690212C19620065EC56 /* FireComponent.swift in Sources */,
+				5BF2A66F212C19620065EC56 /* TowerPicker.swift in Sources */,
+				5BF2A68C212C19620065EC56 /* Arrow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5BF2A627212C19270065EC56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BF2A628212C19270065EC56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5BF2A62C212C19280065EC56 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BF2A62D212C19280065EC56 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5BF2A630212C19280065EC56 /* Debug */ = {
@@ -290,8 +565,10 @@
 		};
 		5BF2A633212C19280065EC56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA7260693348642CE5085DE /* Pods-KingdomDefense.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TN55PBP68;
 				INFOPLIST_FILE = KingdomDefense/Info.plist;
@@ -301,6 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.selfcode.KingdomDefense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,8 +586,10 @@
 		};
 		5BF2A634212C19280065EC56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D024F9A34BD8DFE0888100 /* Pods-KingdomDefense.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TN55PBP68;
 				INFOPLIST_FILE = KingdomDefense/Info.plist;

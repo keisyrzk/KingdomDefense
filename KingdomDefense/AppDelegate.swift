@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  KingdomDefense
 //
-//  Created by Esteban on 21.08.2018.
+//  Created by Esteban on 10.08.2018.
 //  Copyright © 2018 Selfcode. All rights reserved.
 //
 
